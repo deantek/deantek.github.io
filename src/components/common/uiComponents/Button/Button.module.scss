@@ -14,8 +14,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   .loader {
     margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.7rem;
   }
 }
