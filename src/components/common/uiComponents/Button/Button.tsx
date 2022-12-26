@@ -18,7 +18,7 @@ const Button = ({ text, btnClassName, onClick, iconUrl, isLink, to, isLoading }:
   if (isLink) {
     return (
       <NavLink to={to || ''} className={`${s.btn} ${btnClassName || ''}`} onClick={onClick}>
-        {iconUrl ? <img src={iconUrl} alt="" /> : <></>}
+        {iconUrl ? <img src={iconUrl} alt="" className={s.img} /> : <></>}
         <span>{text}</span>
       </NavLink>
     )
@@ -32,7 +32,7 @@ const Button = ({ text, btnClassName, onClick, iconUrl, isLink, to, isLoading }:
         </>
       ) : (
         <>
-          {iconUrl ? <img src={iconUrl} alt="" /> : <></>}
+          {iconUrl ? <img src={iconUrl} alt="" className={s.img} /> : <></>}
           <span>{text}</span>
         </>
       )}
