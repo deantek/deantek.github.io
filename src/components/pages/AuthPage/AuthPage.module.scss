@@ -1,0 +1,78 @@
+.auth_container {
+  margin: 0 auto;
+  .form {
+    max-width: 49.6rem;
+    width: 100%;
+    margin-top: 3.8rem;
+
+    .social_buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.6rem;
+      .social_btn {
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        background: #ffffff;
+        width: 24rem;
+        height: 5.6rem;
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: 1.6rem;
+        }
+        &:hover {
+          background: #f6f8ff;
+        }
+      }
+    }
+    .or {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      text-align: center;
+      color: #999999;
+      margin: 1.2rem 0;
+    }
+    .btn {
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.3rem;
+    }
+    .link {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      display: inherit;
+      text-align: center;
+      color: #4e74f5;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth_container {
+    margin: 0;
+    .form {
+      max-width: 100%;
+      width: calc(100% - 3.2rem);
+      margin: 4rem auto 0;
+      .social_buttons {
+        flex-direction: column;
+        .social_btn {
+          width: 100%;
+        }
+      }
+      .inputs {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.loader_container {
+  width: fit-content;
+  margin: 7rem auto;
+  padding: 1rem 0;
+  &.without_margin {
+    margin: 0;
+  }
+}

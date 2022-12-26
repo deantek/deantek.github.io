@@ -1,0 +1,26 @@
+.app_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  * {
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #eaeaea;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #eaeaea;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #bebebe;
+    }
+  }
+}

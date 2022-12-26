@@ -1,0 +1,21 @@
+.btn {
+  background: #4e74f5;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    margin-right: 1.5rem;
+  }
+}

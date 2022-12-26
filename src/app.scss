@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans';
+  font-style: normal;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+}
+
+@media (max-width: 1300px) {
+  html,
+  body {
+    font-size: 43.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+}
+
+* {
+  box-sizing: initial;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+input {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+  margin-bottom: 1.2rem;
+  &::placeholder {
+    color: #e6e6e6;
+  }
+  &:focus {
+    border-color: #4e74f5;
+  }
+  &.input-error {
+    border-color: #f90043;
+    margin-bottom: 0.8rem;
+  }
+  &:disabled {
+    background: #f2f2f2;
+  }
+}
+
+.error {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #fb2424;
+  margin-bottom: 1.6rem;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5.6rem;
+  line-height: 7.6rem;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1.6rem;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  margin: 3.2rem 0 2.4rem;
+  height: 6.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+    line-height: 5.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .btn {
+    margin: 2rem 0 2.4rem;
+    height: 5.6rem;
+  }
+}

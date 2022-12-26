@@ -1,0 +1,169 @@
+.register_container {
+  margin: 0 auto;
+  .form {
+    max-width: 49.6rem;
+    width: 100%;
+    margin-top: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.mail {
+      max-width: 100%;
+      .subtitle {
+        max-width: 56.2rem;
+        line-height: 3rem;
+      }
+      .link {
+        color: #4e74f5;
+      }
+      .btn {
+        width: 35.4rem;
+      }
+    }
+    &.no_mail {
+      max-width: 100%;
+      .subtitle {
+        max-width: 67.4rem;
+        line-height: 3rem;
+      }
+      .inputs {
+        width: 42rem;
+      }
+      .link {
+        color: #999999;
+      }
+      .btn {
+        width: 42rem;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 5.6rem;
+      line-height: 7.6rem;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 1.6rem;
+    }
+    .subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: #999999;
+      text-align: center;
+      margin-bottom: 3.2rem;
+
+      span {
+        color: #4e74f5;
+      }
+    }
+    .social_buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.6rem;
+      .social_btn {
+        border: 1px solid #e6e6e6;
+        border-radius: 12px;
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        background: #ffffff;
+        width: 24rem;
+        height: 5.6rem;
+        img {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: 1.6rem;
+        }
+        &:hover {
+          background: #f6f8ff;
+        }
+      }
+    }
+    .or {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      text-align: center;
+      color: #999999;
+      margin: 1.2rem 0;
+    }
+    .inputs {
+      width: 100%;
+      .input {
+        margin-bottom: 1.2rem;
+      }
+    }
+    .promo_text {
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      text-align: center;
+      color: #4e74f5;
+      margin-bottom: 2.8rem;
+      margin-top: 3.2rem;
+    }
+    .btn {
+      margin: 2rem 0 2.4rem;
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 1.3rem;
+    }
+    .link {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      text-align: center;
+      color: #000000;
+      cursor: pointer;
+
+      a {
+        color: #4e74f5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register_container {
+    margin: 0;
+    padding: 2rem 0;
+    .form {
+      max-width: 100%;
+      width: calc(100% - 3.2rem);
+      margin: 4rem auto 0;
+      &.no_mail {
+        .inputs {
+          width: 100%;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+      .social_buttons {
+        flex-direction: column;
+        width: 100%;
+        .social_btn {
+          width: 100%;
+        }
+      }
+      .inputs {
+        width: 100%;
+      }
+      .link {
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
