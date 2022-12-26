@@ -68,3 +68,23 @@
     margin-bottom: 1.2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .pass_container {
+    margin: 0;
+    .form {
+      max-width: 100%;
+      width: calc(100% - 3.2rem);
+      margin: 4rem auto 0;
+      .social_buttons {
+        flex-direction: column;
+        .social_btn {
+          width: 100%;
+        }
+      }
+      .inputs {
+        width: 100%;
+      }
+    }
+  }
+}
